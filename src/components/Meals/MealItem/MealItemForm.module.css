@@ -1,0 +1,20 @@
+.form {
+  text-align: right;
+}
+
+.form button {
+  font: inherit;
+  cursor: pointer;
+  background: linear-gradient(90deg, #b55fbb, #2f4d8f);
+  border: 1px solid #b55fbb;
+  color: white;
+  padding: 0.25rem 2rem;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.form button:hover,
+.form button:active {
+  background: linear-gradient(90deg, #b55fbb, #2f4d8f);
+  border: 1px solid #2f4d8f;
+}

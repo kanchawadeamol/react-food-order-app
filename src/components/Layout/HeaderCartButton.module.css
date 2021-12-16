@@ -1,0 +1,68 @@
+.button {
+  cursor: pointer;
+  font: inherit;
+  border: none;
+  background: linear-gradient(90deg, #b55fbb, #2f4d8f);
+  color: white;
+  padding: 0.75rem 3rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 25px;
+  font-weight: bold;
+}
+
+.button:hover,
+.button:active {
+  background-color: #2c0d00;
+}
+
+.icon {
+  width: 1.35rem;
+  height: 1.35rem;
+  margin-right: 0.5rem;
+}
+
+.badge {
+  background: linear-gradient(90deg, #cf7ed5, #7d93c3);
+  padding: 0.25rem 1rem;
+  border-radius: 25px;
+  margin-left: 1rem;
+  font-weight: bold;
+}
+
+.button:hover .badge,
+.button:active .badge {
+  background-color: #92320c;
+}
+
+.bump {
+  animation: bump 300ms ease-out;
+}
+
+@keyframes bump {
+  0% {
+    transform: scale(1);
+  }
+  10% {
+    transform: scale(0.9);
+  }
+  30% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(1.15);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  .button {
+    padding: 0.5rem 1em;
+  }
+  .button span {
+    font-size: 14px;
+  }
+}
